@@ -5,17 +5,21 @@ import {RxDotFilled} from "react-icons/rx";
 const Featured = () => {
     const sliders = [
         {
-            url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672332323/NetflixApp/chiken_burger_ncsmeh.webp',
-        },
-        {
             url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672323859/NetflixApp/caesar-salad-with-tuna-30216-1_noflfd.jpg'
         },
         {
             url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672322923/NetflixApp/chicken_tenders_quel6y.jpg'
         },
         {
-            url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672324456/NetflixApp/chinese_pizza_kgnbo1.jpg',
-        }
+            url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672672076/NetflixApp/burger_emxbtv.jpg'
+        },
+        {
+            url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672672452/NetflixApp/pizza_osjb4f.jpg'
+        },
+        {
+            url: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672672612/NetflixApp/ric_a4ewxo.jpg',
+        },
+
 
     ]
     const [currentIndex, setCurrentIndex] = useState(2)
@@ -33,7 +37,7 @@ const Featured = () => {
         setCurrentIndex(slideIndex)
     }
     return (
-        <div className={'h-[500px] w-full p-4 relative group'}>
+        <div className={'max-w-[1520px] mx-auto h-[500px] w-full p-4 relative group'}>
             <div className={'w-full h-full rounded-2xl bg-center bg-cover duration-500'}
                  style={{backgroundImage: `url(${sliders[currentIndex].url})`}}
             ></div>
