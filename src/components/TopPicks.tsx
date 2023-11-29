@@ -22,7 +22,7 @@ const TopPicks = () => {
                                             </button>
                                         </div>
                                         <img
-                                            className={'w-full h-[200px] object-cover rounded-3xl cursor-pointer hover:scale-105 ease-out duration-300'}
+                                            className={'w-full h-[200px] object-cover rounded-3xl cursor-pointer'}
                                             src={item.img}
                                             alt={item.title}
                                         />
